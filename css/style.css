@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  user-select: none; }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  user-select: none; }
+
+body {
+  margin: 0; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input {
+  display: block; }
+
+button {
+  cursor: pointer;
+  display: inline-block; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul, li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+body {
+  line-height: 1.6;
+  font-size: 55px;
+  font-family: "Roboto", sans-serif;
+  background-color: #202020; }
+
+/*# sourceMappingURL=style.css.map */
