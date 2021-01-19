@@ -55,7 +55,7 @@ body {
   position: relative;
   box-shadow: 5px 0 15px #181818; }
   .siedbar__heading {
-    height: 180px; }
+    height: 200px; }
   .siedbar__image {
     display: block;
     height: 100%;
@@ -82,7 +82,7 @@ body {
   .siedbar__item {
     margin-right: 15px; }
   .siedbar__text {
-    padding: 0 10px;
+    padding: 0 15px;
     margin-bottom: 50px; }
     .siedbar__text:after, .siedbar__text:before {
       margin: 25px 0;
@@ -106,9 +106,13 @@ body {
     background: #cccc; }
     .siedbar__btn--left {
       background: #ED3024;
-      margin-right: 10px; }
+      margin-right: 15px; }
+      .siedbar__btn--left:hover {
+        background: #CD251A; }
     .siedbar__btn--right {
       background: #3137C9; }
+      .siedbar__btn--right:hover {
+        background: #2A5FE7; }
       .siedbar__btn--right:focus {
         outline: none; }
 
