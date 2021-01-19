@@ -47,4 +47,69 @@ body {
   max-width: 700px;
   padding: 0 50px; }
 
+.siedbar {
+  height: 100vh;
+  background-color: #202020;
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+  box-shadow: 5px 0 15px #181818; }
+  .siedbar__heading {
+    height: 180px; }
+  .siedbar__image {
+    display: block;
+    height: 100%;
+    width: 100%; }
+  .siedbar__content {
+    margin-top: -50px; }
+    .siedbar__content__avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25); }
+    .siedbar__content__name {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #fff; }
+    .siedbar__content__proff {
+      font-size: 14px; }
+  .siedbar__inner {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px; }
+  .siedbar__item {
+    margin-right: 15px; }
+  .siedbar__text {
+    padding: 0 10px;
+    margin-bottom: 50px; }
+    .siedbar__text:after, .siedbar__text:before {
+      margin: 25px 0;
+      display: block;
+      content: "";
+      width: calc( 100% -20px  );
+      height: 1px;
+      background-color: #1c1c1c; }
+  .siedbar__btn {
+    border-radius: 40px;
+    padding: 1.1em 1.9em;
+    text-decoration: none;
+    border: none;
+    vertical-align: center;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.1;
+    font-family: inherit;
+    font-weight: 500;
+    color: #fff;
+    background: #cccc; }
+    .siedbar__btn--left {
+      background: #ED3024;
+      margin-right: 10px; }
+    .siedbar__btn--right {
+      background: #3137C9; }
+      .siedbar__btn--right:focus {
+        outline: none; }
+
 /*# sourceMappingURL=style.css.map */
