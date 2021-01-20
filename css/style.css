@@ -54,25 +54,25 @@ body {
   text-align: center;
   position: relative;
   box-shadow: 5px 0 15px #181818; }
-  .siedbar__heading {
+  .siedbar__picture {
+    display: block;
     height: 200px; }
   .siedbar__image {
     display: block;
-    height: 100%;
+    height: auto;
     width: 100%; }
-  .siedbar__content {
-    margin-top: -50px; }
-    .siedbar__content__avatar {
+    .siedbar__image__avatar {
+      margin-top: -18px;
       width: 100px;
       height: 100px;
       border-radius: 50%;
       border: 2px solid #ffffff;
       box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25); }
-    .siedbar__content__name {
+    .siedbar__image__name {
       margin-top: 20px;
       font-size: 18px;
       color: #fff; }
-    .siedbar__content__proff {
+    .siedbar__image__proff {
       font-size: 14px; }
   .siedbar__inner {
     margin-top: 20px;
