@@ -55,25 +55,33 @@ body {
   position: relative;
   box-shadow: 5px 0 15px #181818; }
   .siedbar__picture {
+    overflow: hidden;
     display: block;
     height: 200px; }
   .siedbar__image {
     display: block;
     height: auto;
     width: 100%; }
-    .siedbar__image__avatar {
-      margin-top: -18px;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      border: 2px solid #ffffff;
-      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25); }
-    .siedbar__image__name {
-      margin-top: 20px;
-      font-size: 18px;
-      color: #fff; }
-    .siedbar__image__proff {
-      font-size: 14px; }
+  .siedbar__content__photo {
+    display: block;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    margin: -50px auto 20px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+    position: relative; }
+  .siedbar__content__avatar {
+    width: auto;
+    height: 100%;
+    margin: 0 -50%; }
+  .siedbar__content__name {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff; }
+  .siedbar__content__proff {
+    font-size: 14px; }
   .siedbar__inner {
     margin-top: 20px;
     justify-content: center;

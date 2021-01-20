@@ -26,21 +26,29 @@ body
   position: relative
   box-shadow: 5px 0 15px #181818
   &__picture
+    overflow: hidden
     display: block
     height: 200px
   &__image
     display: block
     height: auto
     width: 100%
-  
-    
-    &__avatar
-      margin-top: -18px
-      width: 100px
+  &__content
+    &__photo
+      display: block
       height: 100px
+      width: 100px
+      overflow: hidden
+      margin: -50px auto 20px
       border-radius: 50%
       border: 2px solid #ffffff
       box-shadow: 0 7px 20px rgba(0,0 , 0,.25 )
+      position: relative
+    &__avatar
+      width: auto
+      height: 100%
+      margin: 0 -50%
+      
     &__name
       margin-top: 20px
       font-size: 18px
