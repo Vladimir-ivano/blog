@@ -14,6 +14,7 @@ body
   height: 100%
   color: $textcol
 .container
+  margin: 0 auto
   max-width: 700px
   padding: 0 50px
 
@@ -108,50 +109,34 @@ body
 .main
   flex-basis: calc( 100% - 350px  )
   background-color: $accent
+
+// ====== nav======//
+
 .nav
-  position: relative
-  display: flex
   background-color: $head
   box-shadow: 0 5px 22px rgba(0,0 , 0,.25 )
-  &__list
-    border-bottom-left-radius: 5px
-    border-bottom-right-radius: 5px
-    display: none
-    padding: 1.2em 1em
-    background-color: #3137C9
-    position: absolute
-    height: 84px
-    top: 44px
-    left: 108px
-    width: 208px
-    height: auto
-    &:target
-      display: block
-  &__categoru
-    margin-bottom: 5px
-    font-size: 15px
-    text-decoration: none
-    color: #fff
-    padding: 1em 1em
-    transition: all 0.2s linear
+  &__nav
+    display: flex
+  &__item
+    position: relative
     &:hover
-      color: #b8b3b3
-
-    
+      .nav__link
+        background-color: $butcol
+      > .subnav
+        display: block
   &__link
+    text-transform: uppercase
+    display: block
     position: relative
     text-decoration: none
     color: #FFFF
     font-size: 14px
     line-height: 1.1
     padding: 1em 2em
-    &:hover
-      background-color: $butcol
+    
     &--list
       padding-right: 2.5em
       position: relative
-      &:hover
-        
       &::after
         position: absolute
         top: 50%
@@ -162,7 +147,6 @@ body
         border-width: 6px 5px 0 5px
         border-color: #fff transparent transparent transparent
         transform: translateY(-50%)
-  
     &--offset
       margin-right: auto
   &__search
@@ -177,5 +161,31 @@ body
       background-color: #2c2c2c
     &:focus
       outline: none
+.nav__item
+  position: relative
+  &:hover
+.nav__link
+    > .subnav
+      display: block
+.subnav
+  padding: 1em 0em
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+  background-color: $butcol
+  width: 14.5rem
+  position: absolute
+  top: 100%
+  left: 0
+  display: none
+  &__categoru
+    text-decoration: none
+    text-transform: uppercase
+    color: #fff
+    font-size: 12px
+    padding: 2.5em 1em
+    transition: 0.2s linear
+    &:hover
+      color: #bbb8b8
+
 
   
