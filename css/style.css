@@ -145,21 +145,21 @@ body {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     display: none;
-    padding: 10px 10px;
+    padding: 1.2em 1em;
     background-color: #3137C9;
     position: absolute;
     height: 84px;
     top: 44px;
     left: 108px;
     width: 208px;
-    height: 80px; }
+    height: auto; }
     .nav__list:target {
       display: block; }
   .nav__categoru {
     font-size: 15px;
     text-decoration: none;
     color: #fff;
-    padding: 10px 10px; }
+    padding: 1em 1em; }
   .nav__link {
     position: relative;
     text-decoration: none;
