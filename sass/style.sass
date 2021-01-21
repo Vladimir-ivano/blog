@@ -21,7 +21,7 @@ body
 .siedbar
   height: 100vh
   background-color: #202020
-  max-width: 350px
+  flex-basis: 350px
   text-align: center
   position: relative
   box-shadow: 5px 0 15px #181818
@@ -96,3 +96,9 @@ body
         background: #2A5FE7
       &:focus
         outline: none
+.page
+  display: flex
+.main
+  flex-basis: calc( 100% - 350px  )
+  background-color: $accent
+  
