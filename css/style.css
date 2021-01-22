@@ -188,6 +188,8 @@ body {
 
 .nav__item {
   position: relative; }
+  .nav__item--offset {
+    margin-right: auto; }
 
 .nav__link > .subnav {
   display: block; }
