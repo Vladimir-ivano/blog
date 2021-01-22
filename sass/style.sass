@@ -116,6 +116,7 @@ body
   
   background-color: $head
   box-shadow: 0 5px 22px rgba(0,0 , 0,.25 )
+  margin-bottom: 6em
   &__nav
     display: flex
   &__item
@@ -189,6 +190,68 @@ body
     transition: 0.2s linear
     &:hover
       color: #bbb8b8
+// ====== storis======//
+.storis
+  display: flex
+  justify-content: space-between
+  margin-bottom: 35px
+  height: 195px
+  &__item
+    cursor: pointer
+    border-radius: 7px
+    flex-basis: 140px
+    height: 195px
+    box-shadow: 0 5px 15px rgba(0,0 ,0 , .4)
+    overflow: hidden
+    position: relative
+    &:hover
+      .storis__img
+        transform: scale(1.5)
+        transition-duration: 5s
+    &::after
+      content: ''
+      display: block
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      background: rgba(0,0 ,0 ,0.3 )
+    &::before
+      position: absolute
+      content: attr(data-info)
+      display: block
+      color: #fff
+      font-size: 12px
+      font-family: $tt1
+      position: absolute
+      text-align: left
+      width: 100%
+      top: 12px
+      left: 12px
+      z-index: 2
+  &__img
+    display: block
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    object-fit: cover
+    transition: transform 1s ease-in-out
+  &__time
+    width: 100%
+    color: #fff
+    font-size: 12px
+    font-family: $tt1
+    position: absolute
+    text-align: right
+    right: 12px
+    bottom: 12px
+    z-index: 2
+    
 
-
-  
+    
+    
