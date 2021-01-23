@@ -250,10 +250,10 @@ body {
       font-family: "Lato", sans-serif;
       position: absolute;
       text-align: left;
-      width: 100%;
       top: 12px;
       left: 12px;
-      z-index: 2; }
+      z-index: 2;
+      width: calc(100% - 24px); }
   .storis__img {
     display: block;
     width: 100%;
@@ -265,7 +265,6 @@ body {
     object-fit: cover;
     transition: transform 1s ease-in-out; }
   .storis__time {
-    width: 100%;
     color: #fff;
     font-size: 12px;
     font-family: "Lato", sans-serif;
@@ -273,6 +272,7 @@ body {
     text-align: right;
     right: 12px;
     bottom: 12px;
-    z-index: 2; }
+    z-index: 2;
+    width: calc(100% - 24px); }
 
 /*# sourceMappingURL=style.css.map */
