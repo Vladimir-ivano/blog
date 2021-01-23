@@ -223,7 +223,7 @@ body {
   .storis__item {
     cursor: pointer;
     border-radius: 7px;
-    flex-basis: 0 0 140px;
+    flex: 0 0 140px;
     margin-right: calc( 40px /3 );
     height: 195px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
