@@ -220,6 +220,8 @@ body {
   overflow-x: scroll;
   margin-bottom: 35px;
   overflow-y: hidden; }
+  .storis:only-child {
+    overflow-x: hidden; }
   .storis__item {
     cursor: pointer;
     border-radius: 7px;
@@ -275,5 +277,56 @@ body {
     bottom: 12px;
     z-index: 2;
     width: calc(100% - 24px); }
+
+.add__post {
+  width: 100%;
+  background-color: #121212;
+  border-radius: 4px;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
+  display: flex; }
+  .add__post__text {
+    height: 76px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 15px;
+    flex-basis: 80%;
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.5); }
+    .add__post__text:focus {
+      outline: none; }
+  .add__post__labal {
+    position: relative;
+    cursor: pointer;
+    align-self: center;
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin-right: auto;
+    background-color: #EBEBEB;
+    border-radius: 50%;
+    transition: all 0.2s linear; }
+    .add__post__labal:hover {
+      background-color: #cecbcb; }
+  .add__post__input {
+    overflow: hidden;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0; }
+  .add__post__btn {
+    align-self: center;
+    width: 44px;
+    height: 44px;
+    background-color: #3137C9;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+    margin-right: 10px; }
+    .add__post__btn:hover {
+      background-color: #2A5FE7; }
+  .add__post__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=style.css.map */
