@@ -336,7 +336,7 @@ body {
     color: #828282; }
 
 .post__picture {
-  margin: -25px;
+  margin: -25px -25px;
   width: 100%;
   height: 100%;
   overflow: hidden; }
@@ -379,5 +379,25 @@ body {
 .post__link {
   font-size: 14px;
   color: #828282; }
+  .post__link:hover {
+    color: #c5bfbf; }
+
+.video {
+  position: relative;
+  overflow: hidden; }
+  .video::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; }
+  .video__inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+
+.post__four {
+  margin-bottom: 80px; }
 
 /*# sourceMappingURL=style.css.map */
