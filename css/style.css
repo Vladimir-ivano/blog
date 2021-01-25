@@ -13,12 +13,14 @@ body {
   margin: 0; }
 
 input, button, textarea {
-  font-family: inherit; }
+  font-family: inherit;
+  border: none; }
 
 input {
   display: block; }
 
 button {
+  border: none;
   cursor: pointer;
   display: inline-block; }
 
@@ -48,11 +50,19 @@ body {
   max-width: 700px;
   padding: 0 50px; }
 
+.page {
+  display: flex; }
+
+.main {
+  flex-basis: calc( 100% - 350px  );
+  background-color: #202020; }
+
 .siedbar {
   background-color: #202020;
   flex-basis: 350px;
   text-align: center;
   position: relative;
+  height: 100hv;
   box-shadow: 5px 0 15px #181818; }
   .siedbar__picture {
     overflow: hidden;
@@ -129,13 +139,6 @@ body {
         background: #2A5FE7; }
       .siedbar__btn--right:focus {
         outline: none; }
-
-.page {
-  display: flex; }
-
-.main {
-  flex-basis: calc( 100% - 350px  );
-  background-color: #202020; }
 
 .nav {
   background-color: #0D0D0D;
@@ -278,6 +281,7 @@ body {
     width: calc(100% - 24px); }
 
 .add__post {
+  margin-bottom: 25px;
   padding: 20px;
   align-items: center;
   background-color: #121212;
@@ -318,7 +322,7 @@ body {
     opacity: 0; }
 
 .post {
-  margin-top: 25px;
+  margin-bottom: 25px;
   background: #202020;
   border-radius: 4px;
   box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
@@ -327,8 +331,53 @@ body {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px; }
-  .post__time {
+  .post__footer {
     font-size: 12px;
     color: #828282; }
+
+.post__picture {
+  margin: -25px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+.post__image {
+  width: 600px;
+  height: 245px;
+  object-fit: cover;
+  border-radius: 4px; }
+.post__content {
+  margin-top: 20px; }
+.post__title {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px; }
+.post__inner {
+  display: flex;
+  justify-content: space-between; }
+.post__btn {
+  font-size: 14px;
+  line-height: 1.1;
+  color: #107EFF;
+  cursor: pointer; }
+  .post__btn:hover {
+    color: #0372f1; }
+.post__footer {
+  display: flex; }
+.post__item {
+  margin-right: 20px;
+  position: relative; }
+  .post__item:last-child {
+    margin-right: 0px; }
+  .post__item--time::after {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    margin-left: 15px; }
+.post__link {
+  font-size: 14px;
+  color: #828282; }
 
 /*# sourceMappingURL=style.css.map */
