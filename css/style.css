@@ -410,10 +410,16 @@ body {
     padding: 13px 15px;
     margin-right: 5px;
     background-color: #0D0D0D;
-    transition: all 0.2s linear; }
+    transition: all 0.2s linear;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
     .pagination__inner:hover {
-      background-color: #181818; }
+      background-color: #104BE3;
+      box-shadow: rgba 16, 75, 227, 0.15; }
+  .pagination .active {
+    background-color: #104BE3;
+    box-shadow: rgba 16, 75, 227, 0.15; }
   .pagination__item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     color: #fff;
     transition: all 0.2s linear; }
