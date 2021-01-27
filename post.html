@@ -9,7 +9,7 @@
 </head>
 
 <body class="page">
- 
+
 
   <svg display="none">
 
@@ -161,11 +161,13 @@
       </ul>
     </nav>
 
-    <div class="container">
 
+    <!-- container-->
+
+    <div class="container">
       <!-- post -->
 
-      <article class="post post__post">
+      <div class="post post__post">
         <ul class="post__headar">
           <li class="post__header__item">
             <a class="post__header__item__link" href="">вернуться назад </a>
@@ -206,7 +208,7 @@
 
         <!-- post__related -->
 
-        <div class="post__related">
+        <article class="post__related">
           <h3 class="post__related__title">Интересно почитать</h3>
 
           <ul class="post__related">
@@ -233,68 +235,67 @@
             </li>
           </ul>
 
-        </div>
+        </article>
 
 
         <!-- form -->
 
-        <div class="commets">
+        <article class="commets">
           <h3 class="commets__title">Обсуждение</h3>
           <form class="commets__form " action="#" method="POST">
             <textarea class="commets__text" placeholder="Текст комментария"></textarea>
             <button class="siedbar__btn commets--btn">Отправить</button>
           </form>
+        </article>
 
+        <!-- comment -->
 
-          <!-- comment -->
-
+        <article class="commet">
           <div class="commet">
-            <div class="commet">
-              <picture class=" commet__photo">
-                <source srcset="" type="image/webp">
-                <img class="commet__avatar" src="" alt="">
-              </picture>
-              <ul class="commet__me">
-                <li class="commet__name">Дмитрий Валак</li>
-                <li class="post__time commet--time">1 неделю назад</li>
-              </ul>
-            </div>
-            <p class="commet__text">
-              Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
-              Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
-              volutpat.
-            </p>
-            <a class="post__btn" href="#">ответить</a>
+            <picture class=" commet__photo">
+              <source srcset="" type="image/webp">
+              <img class="commet__avatar" src="" alt="">
+            </picture>
+            <ul class="commet__me">
+              <li class="commet__name">Дмитрий Валак</li>
+              <li class="post__time commet--time">1 неделю назад</li>
+            </ul>
           </div>
+          <p class="commet__text">
+            Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
+            Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+            volutpat.
+          </p>
+          <a class="post__btn" href="#">ответить</a>
+        </article>
 
-<!-- comment--two -->
+        <!-- comment--two -->
 
-<div class="commet--two">
-  <div class="commet">
-    <picture class=" commet__photo">
-      <source srcset="" type="image/webp">
-      <img class="commet__avatar" src="" alt="">
-    </picture>
-    <ul class="commet__me">
-      <li class="commet__name">Джонни</li>
-      <li class="post__time commet--time">1 неделю назад</li>
-    </ul>
-  </div>
-  <p class="commet__text">
-    Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
-    Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
-    volutpat.
-  </p>
-  <a class="post__btn" href="#">ответить</a>
-</div>
+        <article class="commet--two">
+          <div class="commet">
+            <picture class=" commet__photo">
+              <source srcset="" type="image/webp">
+              <img class="commet__avatar" src="" alt="">
+            </picture>
+            <ul class="commet__me">
+              <li class="commet__name">Джонни</li>
+              <li class="post__time commet--time">1 неделю назад</li>
+            </ul>
+          </div>
+          <p class="commet__text">
+            Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
+            Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+            volutpat.
+          </p>
+          <a class="post__btn" href="#">ответить</a>
+        </article>
 
 
 
-        </div>
+      </div><!-- /post post__post-->
 
-      </article>
+    </div> <!-- /container-->
 
-    </div>
 
 
   </main>
