@@ -401,25 +401,28 @@ body
   justify-content: center
   margin-bottom: 60px
   &__inner
-    padding: 13px 15px
     margin-right: 5px
-    background-color: $head
     transition: all 0.2s linear
     box-shadow: 0 0 10px rgba(0,0 ,0 ,.15 )
-    &:hover
-      background-color: #104BE3
-      box-shadow: rgba ( 16,75,227, .15)
-  .active
-    background-color: #104BE3
-    box-shadow: rgba ( 16,75,227, .15)
   &__item
+    line-height: 40px
+    background-color: $head
+    width: 40px
+    height: 40px
+    font-size: 14px
+    text-align: center
+    border-radius: 3px
+    display: block
     box-shadow: 0 0 10px rgba(0,0 ,0 ,.15 )
     cursor: pointer
     color: #fff
     transition: all 0.2s linear
-  
     &:hover
-      color: #d8d7d7
+      background-color: #a8a5a5
+  .active
+    background-color: #104BE3
+    box-shadow: rgba ( 16,75,227, .15)
+    
       
 
 
