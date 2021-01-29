@@ -423,10 +423,135 @@ body
     background-color: #104BE3
     box-shadow: rgba ( 16,75,227, .15)
     
+
+// ======post post__post======//
+.post
+  margin-bottom: 60px
+  &__headar
+    display: flex
+    &__item:first-child
+      margin-right: auto
       
+    &__link
+      font-size: 14px
+      line-height: 1.6
+      color: $blgcol
+      margin-right: 10px
+  &__title--post
+    margin-bottom: 10px
+  &__item--time
+    font-size: 14px
+    margin-bottom: 20px
+  &__text
+    margin-top: 20px
+  &__text--tree
+    margin-top: 0px
+  &__picture--post
+    padding: 25px 25px 0
+  &__content--post 
+    margin-bottom: 30px
+    &::after
+      margin: 30px 0
+      display: block
+      content: ''
+      width: calc( 100% -25px  ) 
+      height: 1px
+      background-color: #1c1c1c
+// ======post__related======//
+.post__related
+  &::after
+    margin: 25px 0
+    display: block
+    content: ''
+    width: calc( 100% -25px  ) 
+    height: 1px
+    background-color: #1c1c1c
+  &__title
+    font-size: 16px
+    color: #fff
+    font-weight: 300
+    margin-bottom: 30px
+    &--title
+      margin-bottom: 20px
+      text-align: left
+  &__post
+    display: flex
+    justify-content: space-between
+  &__item
+    flex-basis: 49%
+    margin-bottom: 20px
+  &__link
+    display: block
+    font-size: 14px
+    line-height: 1.6
+    font-weight: 300
+    color: #F3EBA2
+    transition: all 0.2s linear
+    &:hover
+      color:  #f7eb81
 
-
+// ======commets======//
+.commets
+  margin-top: 10px
+  margin-bottom: 40px
+  &__form
+  &__text
+    width: 100%
+    resize: none
+    color: #fff
+    background: inherit
+    margin-bottom: 20px
+    font-size: 14px
+    border-bottom: 1px solid rgba(255,255 ,255 ,.20 )
+    line-height: 1.3
     
+    &::placeholder
+      color: rgba(255,255 ,255 ,.20 )
+      padding-bottom: 2px
+    &:focus
+      outline: none
+  &--btn
+    background-color: $butcol
+    border-radius: 4px
+
+    // ======commet======//
+.commet
+  margin-bottom: 30px
+  &--two
+    padding-left: 20px
+  &__inner
+    align-items: center
+    display: flex
+    margin-bottom: 15px
+    position: relative
+  &__photo
+    
+  &__avatar
+    position: absolute
+    top: 0
+    left: 0
+    object-fit: cover
+    width: 30px
+    height: 30px
+    border-radius: 50%
+  &__me
+    margin-left: 45px
+  &__name
+    font-size: 12px
+    font-weight: 500
+    line-height: 1.1
+    color: #fff
+    margin-bottom: 5px
+  &--time
+    font-size: 12px
+    line-height: 1.16
+    font-weight: 400
+  &__text
+    font-size: 12px
+    line-height: 1.2
+    color: #fff
+    margin-bottom: 5px
+
 
 
   

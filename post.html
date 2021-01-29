@@ -168,18 +168,27 @@
       <!-- post -->
 
       <div class="post post__post">
-        <ul class="post__headar">
-          <li class="post__header__item">
-            <a class="post__header__item__link" href="">вернуться назад </a>
+        <ul class="post__headar post__headar--post">
+          <li class="post__headar__item">
+            <a class="post__headar__link" href="">вернуться назад </a>
           </li>
-          <li class="post__header__item">
-            <a class="post__header__item__link" href="">поделиться</a>
-            <img src="./photo/share .svg" alt="">
+          <li class="post__headar__item">
+            <a class="post__headar__link" href="">поделиться</a>
+          </li>
+          <li class="post__headar__item">
+            <a class="post__headar__link" href=""><img class="post__headar__img" src="./photo/share .svg" alt=""></a>
+
           </li>
         </ul>
 
-        <article class="post__content">
-          <h2 class="post__title">Как создавать сайты легко</h2>
+        <article class="post__content post__content--post ">
+          <h2 class="post__title post__title--post">Как создавать сайты легко</h2>
+          <ul class="post__footer">
+            <li class="post__item post__item--time">21.06.2020</li>
+            <li class="post__item">
+              <a class="post__link " href="#"> создание сайтов</a>
+            </li>
+          </ul>
           <p class="post__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
             posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
@@ -191,12 +200,12 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
             posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
             lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-          <picture>
+          <picture class="post__picture post__picture--post">
             <source srcset="" type="image/webp" height>
             <img class="post__image" src="./photo/post5.jpg" alt="">
           </picture>
 
-          <p class="post__text post__text--tree ">
+          <p class="post__text post__text--tree">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
             posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
             lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. Lorem ipsum dolor
@@ -211,37 +220,37 @@
         <article class="post__related">
           <h3 class="post__related__title">Интересно почитать</h3>
 
-          <ul class="post__related">
+          <ul class="post__related__post">
             <li class="post__related__item">
               <a class="post__related__link" href="">Как я сходил на FrontEnd Conf 2021 </a>
-            <li class="post__time">21.06.2020</li>
+              <time class="post__time">21.06.2020</time>
             </li>
 
             <li class="post__related__item">
               <a class="post__related__link" href="">Как писать код быстро и ...</a>
-            <li class="post__time">21.06.2020</li>
+              <time class="post__time">21.06.2020</time>
             </li>
           </ul>
 
-          <ul class="post__related">
+          <ul class="post__related__post">
             <li class="post__related__item">
               <a class="post__related__link" href="">Купил новый ноутбук за 150 000 руб</a>
-            <li class="post__time">21.06.2020</li>
+              <time class="post__time">21.06.2020</time>
             </li>
 
             <li class="post__related__item">
               <a class="post__related__link" href="">Купил новый ноутбук за 150 000 руб</a>
-            <li class="post__time">21.06.2020</li>
+              <time class="post__time">21.06.2020</time>
             </li>
           </ul>
 
         </article>
 
-
-        <!-- form -->
+<!-- form -->
+        
 
         <article class="commets">
-          <h3 class="commets__title">Обсуждение</h3>
+          <h3 class="post__related__title post__related__title--commets">Обсуждение</h3>
           <form class="commets__form " action="#" method="POST">
             <textarea class="commets__text" placeholder="Текст комментария"></textarea>
             <button class="siedbar__btn commets--btn">Отправить</button>
@@ -251,10 +260,10 @@
         <!-- comment -->
 
         <article class="commet">
-          <div class="commet">
+          <div class="commet__inner">
             <picture class=" commet__photo">
               <source srcset="" type="image/webp">
-              <img class="commet__avatar" src="" alt="">
+              <img class="commet__avatar" src="./photo/avatar.jpg" alt="">
             </picture>
             <ul class="commet__me">
               <li class="commet__name">Дмитрий Валак</li>
@@ -272,10 +281,10 @@
         <!-- comment--two -->
 
         <article class="commet--two">
-          <div class="commet">
+          <div class="commet__inner">
             <picture class=" commet__photo">
               <source srcset="" type="image/webp">
-              <img class="commet__avatar" src="" alt="">
+              <img class="commet__avatar" src="./photo/avatar1.jpg" alt="">
             </picture>
             <ul class="commet__me">
               <li class="commet__name">Джонни</li>
