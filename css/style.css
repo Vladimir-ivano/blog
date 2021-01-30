@@ -340,6 +340,8 @@ body {
   margin: -25px -25px 25px;
   width: calc( 100% + 50px  );
   overflow: hidden; }
+  .post__picture--video {
+    margin: 0 0 25px; }
 .post__image {
   width: 100%;
   height: 245px;
@@ -384,14 +386,15 @@ body {
   .post__link:hover {
     color: #c5bfbf; }
 
-.video {
+.emdat {
   position: relative;
   overflow: hidden; }
-  .video::before {
+  .emdat::before {
     content: "";
     display: block;
     padding-top: 56.25%; }
-  .video__inner {
+  .emdat iframe, .emdat video {
+    overflow: hidden;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -480,10 +483,14 @@ body {
   display: flex;
   justify-content: space-between; }
 .post__related__item {
-  flex-basis: 49%;
+  flex-basis: 50%;
   margin-bottom: 20px; }
 .post__related__link {
   display: block;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: wrap;
   font-size: 14px;
   line-height: 1.6;
   font-weight: 300;
@@ -516,7 +523,7 @@ body {
 .commet {
   margin-bottom: 30px; }
   .commet--two {
-    padding-left: 20px; }
+    padding-left: 30px; }
   .commet__inner {
     align-items: center;
     display: flex;
