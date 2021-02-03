@@ -349,6 +349,8 @@ body {
   border-radius: 4px; }
 .post__content {
   margin-top: 20px; }
+  .post__content--saerch {
+    margin-top: 0px; }
 .post__title {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.7);
@@ -386,14 +388,14 @@ body {
   .post__link:hover {
     color: #c5bfbf; }
 
-.emdat {
+.embat {
   position: relative;
   overflow: hidden; }
-  .emdat::before {
+  .embat::before {
     content: "";
     display: block;
-    padding-top: 56.25%; }
-  .emdat iframe, .emdat video {
+    padding-top: 52.25%; }
+  .embat iframe, .embat video {
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -406,6 +408,7 @@ body {
   margin-bottom: 80px; }
 
 .pagination {
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   margin-bottom: 60px; }
@@ -433,7 +436,7 @@ body {
     box-shadow: rgba 16, 75, 227, 0.15; }
 
 .post {
-  margin-bottom: 60px; }
+  margin-bottom: 25px; }
   .post__headar {
     display: flex; }
     .post__headar__item:first-child {
@@ -479,10 +482,15 @@ body {
   .post__related__title--title {
     margin-bottom: 20px;
     text-align: left; }
+  .post__related__title--titles {
+    font-size: 21px;
+    margin-bottom: 25px;
+    text-align: left; }
 .post__related__post {
   display: flex;
   justify-content: space-between; }
 .post__related__item {
+  overflow: hidden;
   flex-basis: 50%;
   margin-bottom: 20px; }
 .post__related__link {
@@ -490,7 +498,7 @@ body {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: wrap;
+  white-space: nowrap;
   font-size: 14px;
   line-height: 1.6;
   font-weight: 300;
@@ -523,7 +531,8 @@ body {
 .commet {
   margin-bottom: 30px; }
   .commet--two {
-    padding-left: 30px; }
+    padding-left: 30px;
+    margin-bottom: 40px; }
   .commet__inner {
     align-items: center;
     display: flex;
