@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Blog</title>
+  <title>Profil</title>
 </head>
 
-<body class="page">
 
+<body class="page page--profil">
   <svg display="none">
 
     <symbol id="facebook" viewBox="0 0 512 512">
@@ -160,182 +159,35 @@
         <input class="nav__search" type="text" placeholder="Поиск по блоку">
       </ul>
     </nav>
-<!-- container-->
+
+
 
     <div class="container">
 
-      <!-- storis -->
+      <h2 class="post__related__title post__related__title--titles">Профиль</h2>
 
-      <ul class="storis">
-        <li class="storis__item " data-info=" Отдыхать на природе">
-          <img class="storis__img" src="./photo/store1.jpg" alt="">
-          <time class="storis__time">20.09.2020</time>
-        </li>
-
-        <li class="storis__item " data-info=" Заканчиваю сложный проект ">
-          <img class="storis__img" src="./photo/store2.jpg" alt="">
-          <time class="storis__time">15.09.2020</time>
-        </li>
-
-        <li class="storis__item " data-info=" Переехал на новую квартиру">
-          <img class="storis__img" src="./photo/store3.jpg" alt="">
-          <time class="storis__time">11.09.2020</time>
-        </li>
-
-        <li class="storis__item " data-info=" Осень пришла">
-          <img class="storis__img" src="./photo/store4.jpg" alt="">
-          <time class="storis__time">28.08.2020</time>
-        </li>
-
-        <li class="storis__item " data-info=" Осень пришла">
-          <img class="storis__img" src="./photo/store4.jpg" alt="">
-          <time class="storis__time">28.08.2020</time>
-        </li>
-
-
-      </ul>
-
-
-      <!-- add__post-->
-
-
-      <form class="add__post" action="/" method="POST">
-        <input class="add__post__text" type="text" placeholder="Напишите что-нибудь">
-        <label class="add__post__btn add__post__btn--photo " for="add__post__file">
-          <input class="add__post__file" type="file" id="add-post-file">
-        </label>
-        <button class="add__post__btn add__post__btn--send"></button>
-
+      <form class="profil"  action="/" method="POST">
+      
+      <div class="profil__form" >
+        <input type="name" placeholder = "Ваше имя" value="Владимир Иванов">
+        <input type="Email" placeholder = "Ваш Email" value="Vova_iva@mail.com">
+        <input type="password" placeholder = "Новый пароль" >
+        <input type="password" placeholder = "Подтвердите пароль" >
+        
+      </div>
+      <div class="profil__avatar">
+        <picture class="profil__picture">
+          <source srcset="" type="image/webp" height>
+          <img class="profil__image" src="" alt="" >
+          </picture>
+          <label class="profil__avatar__label" for="profil__input">
+            <input class="profil__input" type="file" id="profil__input">выбрать  аватар
+          </label>
+      </div>
+      <button class="siedbar__btn commets--btn work--btn" type="submit">Сохранить</button>
       </form>
 
-      <!-- post-->
 
-
-      <article class="post">
-        <p class="post__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
-          posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
-          lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
-        </p>
-        <ul class="post__footer">
-          <li class="post__time">21.06.2020</li>
-        </ul>
-      </article>
-
-
-      <!-- post post--two-->
-
-      <section class="post post__two">
-
-        <picture class="post__picture">
-          <source srcset="" type="image/webp" height>
-          <img class="post__image" src="./photo/post.jpg" alt="">
-        </picture>
-
-        <article class="post__content">
-          <h2 class="post__title">Как писать код быстро и безболезненно? </h2>
-          <p class="post__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
-            posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
-            lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
-          </p>
-        </article>
-
-        <div class="post__inner">
-          <ul class="post__footer">
-            <li class="post__item post__item">21.06.2020</li>
-            <li class="post__item">
-              <a class="post__link " href="#"> создание сайтов</a>
-            </li>
-          </ul>
-          <a class="post__btn" href="#">читать</a>
-        </div>
-      </section>
-
-      <!-- post post--three-->
-
-
-      <section class="post post__three">
-        <div class="embat">
-        <div class="post__picture post__picture--video">
-          <div class="embet">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/o1ekRBpTFaU" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          </div>
-        </div>
-        </div>
-        <article class="post__content">
-          <h2 class="post__title">Купил новый ноутбук за 150 000 руб </h2>
-        </article>
-
-        <div class="post__inner">
-          <ul class="post__footer">
-            <li class="post__item post__item">21.06.2020</li>
-            <li class="post__item">
-              <a class="post__link " href="#"> продвижение видео</a>
-            </li>
-          </ul>
-          <a class="post__btn" href="#">оставить комментарий</a>
-        </div>
-      </section>
-
-      <!-- post post--four-->
-
-      <section class="post post__four">
-
-        <picture class="post__picture">
-          <source srcset="" type="image/webp" height>
-          <img class="post__image" src="./photo/post3.jpg" alt="">
-        </picture>
-
-        <article class="post__content">
-          <h2 class="post__title">Как я сходил на FrontEnd Conf 2021 </h2>
-          <p class="post__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
-            posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
-            lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
-          </p>
-        </article>
-
-        <div class="post__inner">
-          <ul class="post__footer">
-            <li class="post__item post__item">21.06.2020</li>
-            <li class="post__item">
-              <a class="post__link " href="#"> создание сайтов</a>
-            </li>
-          </ul>
-          <a class="post__btn" href="#">читать</a>
-        </div>
-      </section>
-
-      <!-- pagination-->
-
-      <ul class="pagination">
-        <li class="pagination__inner">
-          <a class="pagination__item" href="">
-            < </a>
-        </li>
-        <li class="pagination__inner ">
-          <a class="pagination__item active" href="">1</a>
-        </li>
-        <li class="pagination__inner">
-          <a class="pagination__item" href="">2</a>
-        </li>
-        <li class="pagination__inner">
-          <a class="pagination__item" href="">3</a>
-        </li>
-        <li class="pagination__inner">
-          <a class="pagination__item" href="">></a>
-        </li>
-      </ul>
     </div>
-  </main>
-
-
-
-
-
 </body>
-
 </html>
