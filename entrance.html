@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Profil</title>
+  <title>Document</title>
 </head>
 
-
 <body class="page page--profil">
+
   <svg display="none">
 
     <symbol id="facebook" viewBox="0 0 512 512">
@@ -161,36 +161,31 @@
       </ul>
     </nav>
 
-    <!-- container -->
+
+
 
     <div class="container">
 
-      <h2 class="post__related__title post__related__title--titles">Профиль</h2>
+      <h2 class="post__related__title post__related__title--titles">Вход</h2>
 
       <form class="profil"  action="/" method="POST">
       
       <div class="profil__form" >
-        <input class="profil__form__input" type="name" placeholder = "Ваше имя" value="Владимир Иванов">
-        <input class="profil__form__input"  type="Email" placeholder = "Ваш Email" value="Vova_iva@mail.com">
-        <input class="profil__form__input"  type="password" placeholder = "Новый пароль" >
-        <input class="profil__form__input"  type="password" placeholder = "Подтвердите пароль" >
+        
+        <input class="profil__form__input"  type="Email" placeholder = "Ваш Email" >
+        <input class="profil__form__input"  type="password" placeholder = "Пароль" >
         
       </div>
-      <div class="profil__avatar">
-        <picture class="profil__picture">
-          <source srcset="" type="image/webp" height>
-          <img class="profil__image" src="./photo/av.jpg" alt="" >
-          </picture>
-          <label class="profil__label" for="profil__input">
-            <input class="profil__input" type="file" id="profil__input">выбрать  аватар
-          </label>
-      </div>
-      <button class="siedbar__btn commets--btn work--btn" type="submit">Сохранить</button>
+      <div class="btn__grup">
+      <button class="siedbar__btn commets--btn work--btn" type="submit">Войти</button>
+      <a href="">восстановить</a>
+      <a href="">регистрация</a>
+    </div>
       </form>
 
 
     </div>
-  </main>
+
 </body>
 
 </html>
