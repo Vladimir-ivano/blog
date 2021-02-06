@@ -49,6 +49,11 @@ body {
   margin: 0 auto;
   max-width: 700px;
   padding: 0 50px; }
+  .container--prof {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center; }
 
 .page {
   display: flex; }
@@ -488,6 +493,8 @@ body {
     font-size: 21px;
     margin-bottom: 25px;
     text-align: left; }
+  .post__related__title--center {
+    text-align: center; }
 .post__related__post {
   display: flex;
   justify-content: space-between; }
@@ -626,9 +633,37 @@ body {
 .profil {
   display: flex;
   flex-wrap: wrap; }
+  .profil__inner {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 0; }
+  .profil__item:first-child {
+    margin-right: 20px; }
+  .profil__link {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #fff; }
+    .profil__link:hover {
+      text-decoration: underline; }
+  .profil__grup {
+    position: relative; }
+    .profil__grup__btn {
+      display: flex;
+      justify-content: center; }
+  .profil__line {
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #3137C9;
+    transition: width 0.2s linear; }
   .profil__form {
-    flex-basis: 340px;
-    margin-right: 110px; }
+    flex-basis: 340px; }
+    .profil__form--form {
+      margin: 0 auto;
+      max-width: 300px; }
     .profil__form__input {
       width: 100%;
       font-size: 14px;
@@ -644,6 +679,10 @@ body {
         color: rgba(255, 255, 255, 0.2); }
       .profil__form__input:focus {
         outline: none; }
+      .profil__form__input:focus + .profil__line {
+        width: 100%; }
+  .profil__avatar {
+    margin-left: 110px; }
   .profil__picture {
     height: 100%;
     width: auto; }

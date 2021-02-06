@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Profil</title>
+  <title>Document</title>
 </head>
 
-
 <body class="page page--profil">
+
   <svg display="none">
 
     <symbol id="facebook" viewBox="0 0 512 512">
@@ -161,56 +161,53 @@
       </ul>
     </nav>
 
-    <!-- container -->
 
-    <div class="container container--prof">
+    <!-- container-->
 
-      <h2 class="post__related__title post__related__title--titles">Профиль</h2>
+    <div class="container  container--prof">
 
-      <form class="profil" action="/" method="POST">
+      <h2 class="post__related__title post__related__title--titles post__related__title--center">Pегистрация</h2>
 
-        <div class="profil__form">
-          <div class="profil__grup">
-            <input class="profil__form__input" type="name" placeholder="Ваше имя" value="Владимир Иванов">
-            <span class="profil__line"></span>
+      <form class="" action="/" method="POST">
+
+        <div class="profil__form profil__form--form">
+
+          <div class="profil__form">
+            <div class="profil__grup">
+              <input class="profil__form__input" type="name" placeholder="Ваше имя">
+              <span class="profil__line"></span>
+            </div>
+
+            <div class="profil__grup">
+              <input class="profil__form__input" type="Email" placeholder="Ваш Email">
+              <span class="profil__line"></span>
+            </div>
+
+            <div class="profil__grup">
+              <input class="profil__form__input" type="password" placeholder="Пароль">
+              <span class="profil__line"></span>
+            </div>
+            <div class="profil__grup">
+              <input class="profil__form__input" type="password" placeholder="Подтвердите пароль">
+              <span class="profil__line"></span>
+            </div>
           </div>
-
-          <div class="profil__grup">
-            <input class="profil__form__input" type="Email" placeholder="Ваш Email" value="Vova_iva@mail.com">
-            <span class="profil__line"></span>
+          <div class="profil__grup__btn">
+            <button class="siedbar__btn commets--btn work--btn" type="submit">регистрация</button>
           </div>
-
-          <div class="profil__grup">
-            <input class="profil__form__input" type="password" placeholder="Новый пароль">
-            <span class="profil__line"></span>
-          </div>
-
-          <div class="profil__grup">
-            <input class="profil__form__input" type="password" placeholder="Подтвердите пароль">
-            <span class="profil__line"></span>
-          </div>
-        </div><!--/ profil__form -->
+          <ul class="profil__inner">
+            <li class="profil__item">
+              <a class="profil__link" href="">регистрация</a>
+            </li>
+            <li class="profil__item">
+              <a class="profil__link" href="">войти</a>
+            </li>
+          </ul>
+      </form>
 
 
+    </div>
 
-        <div class="profil__avatar">
-          <picture class="profil__picture">
-            <source srcset="" type="image/webp" height>
-            <img class="profil__image" src="./photo/av.jpg" alt="">
-          </picture>
-
-          <label class="profil__label" for="profil__input">
-            <input class="profil__input" type="file" id="profil__input">выбрать аватар
-          </label>
-
-
-        </div><!--/ profil___avatar -->
-        <button class="siedbar__btn commets--btn work--btn" type="submit">Сохранить</button>
-      </form><!-- form -->
-
-
-    </div><!-- /container -->
-  </main>
 </body>
 
 </html>

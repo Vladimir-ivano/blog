@@ -17,7 +17,13 @@ body
   margin: 0 auto
   max-width: 700px
   padding: 0 50px
-  &--b
+  
+  &--prof
+    display: flex
+    height: 80vh
+    flex-direction: column
+    justify-content: center
+   
     
 
 
@@ -490,6 +496,8 @@ body
       font-size: 21px
       margin-bottom: 25px
       text-align: left
+    &--center
+      text-align: center
   &__post
     display: flex
     justify-content: space-between
@@ -632,16 +640,44 @@ body
   &__btn
     margin-top: auto
     text-align: right
-
-
-// ====== profil======//
-
+// ======profil======//
 .profil
   display: flex
   flex-wrap: wrap
+  &__inner
+    display: flex
+    justify-content: center
+    
+    margin: 30px auto 0
+  &__item
+    &:first-child
+      margin-right: 20px
+  &__link
+    font-size: 12px
+    line-height: 1.2
+    color: #fff
+    &:hover
+      text-decoration: underline
+  &__grup
+    position: relative
+    &__btn
+      display: flex
+      justify-content: center
+  &__line
+    position: absolute
+    width: 0
+    height: 1px
+    left: 0
+    bottom: 0
+    z-index: 1
+    background-color: #3137C9
+    transition: width 0.2s linear
+    
   &__form
     flex-basis: 340px
-    margin-right: 110px
+    &--form
+      margin: 0 auto
+      max-width: 300px
     &__input
       width: 100%
       font-size: 14px
@@ -656,9 +692,11 @@ body
       &::placeholder
         color: rgba(255,255 ,255 ,.20 )
       &:focus
-        outline: none    
+        outline: none
+      &:focus + .profil__line
+        width: 100%
   &__avatar
-    
+    margin-left: 110px
   &__picture
     height: 100%
     width: auto
@@ -668,7 +706,6 @@ body
     object-fit: cover
     margin-bottom: 15px
     display: block
-   
   &__label
     text-decoration: underline
     cursor: pointer
