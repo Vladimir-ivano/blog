@@ -662,6 +662,8 @@ body {
     transition: width 0.2s linear; }
   .profil__form {
     flex-basis: 340px; }
+    .profil__form--modal {
+      max-width: 340px; }
     .profil__form--form {
       margin: 0 auto;
       max-width: 300px; }
