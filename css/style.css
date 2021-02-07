@@ -585,7 +585,8 @@ body {
   .work:last-child {
     margin-bottom: 60px; }
   .work__pucture {
-    width: auto; }
+    width: auto;
+    min-height: 510px; }
   .work__image {
     height: 100%;
     display: block;
