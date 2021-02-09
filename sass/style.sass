@@ -29,6 +29,7 @@ body
 
 .page
   display: flex
+  
   &--profil
     height: 100vh
 .main
@@ -42,8 +43,11 @@ body
   flex-basis: 350px
   text-align: center
   position: relative
-  height: 100hv
   box-shadow: 5px 0 15px #181818
+  &__box
+    position: sticky
+    top: 0
+  
   &__picture
     
     overflow: hidden
@@ -132,6 +136,9 @@ body
   background-color: $head
   box-shadow: 0 5px 22px rgba(0,0 , 0,.25 )
   margin-bottom: 6em
+  &__box
+    position: sticky
+    top: 0
   &__nav
     display: flex
   &__item
@@ -679,7 +686,7 @@ body
   &__form
     flex-basis: 340px
     &--modal
-      max-width: 340px
+      flex-basis: 340px
     &--form
       margin: 0 auto
       max-width: 300px
@@ -720,4 +727,60 @@ body
       text-decoration: none
   &__input
     display: none
+// ======modal======//
+.modal
+  display: flex
+  justify-content: center
+  align-items: center
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(0,0 ,0 ,0.5 )
+  top: 0
+  left: 0
+  z-index: 5
+  opacity: 0
+  visibility: hidden
+  transition: all .5s ease 0s
+  &:target
+    opacity: 1
+    visibility: visible
+  &:target .modal--form
+    transform: perspective(600px) translate(0, 0) rotatex(0deg)
+    opacity: 1
     
+  &--form
+    position: relative
+    max-width: 540px
+    width: 100%
+    padding: 50px 40px 40px
+    background-color: #202020
+    border-radius: 4px
+    opacity: 0
+    transform: perspective(600px) translate(0, -100%) rotatex(45deg)
+    transition: all .5s ease 0s
+  &--btn
+    text-align: left
+    margin-bottom: 50px
+  &__close
+    
+    position: absolute
+    top: 20px
+    right: 20px
+    display: block
+    text-align: right
+    transition: transform .2s linear
+    &:hover
+      transform: rotate(90deg)      
+  &__inner
+    display: flex
+    justify-content: center
+  &__item
+    margin-right: 20px
+  &__link
+    text-decoration: underline
+    color: rgba(255,255 ,255 ,0.5 )
+    transition: .2s linear
+    &::hover
+      text-decoration: none
+  

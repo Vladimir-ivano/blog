@@ -69,8 +69,10 @@ body {
   flex-basis: 350px;
   text-align: center;
   position: relative;
-  height: 100hv;
   box-shadow: 5px 0 15px #181818; }
+  .siedbar__box {
+    position: sticky;
+    top: 0; }
   .siedbar__picture {
     overflow: hidden;
     display: block;
@@ -151,6 +153,9 @@ body {
   background-color: #0D0D0D;
   box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
   margin-bottom: 6em; }
+  .nav__box {
+    position: sticky;
+    top: 0; }
   .nav__nav {
     display: flex; }
   .nav__item {
@@ -662,7 +667,7 @@ body {
   .profil__form {
     flex-basis: 340px; }
     .profil__form--modal {
-      max-width: 340px; }
+      flex-basis: 340px; }
     .profil__form--form {
       margin: 0 auto;
       max-width: 300px; }
@@ -703,5 +708,59 @@ body {
       text-decoration: none; }
   .profil__input {
     display: none; }
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s; }
+  .modal:target {
+    opacity: 1;
+    visibility: visible; }
+  .modal:target .modal--form {
+    transform: perspective(600px) translate(0, 0) rotatex(0deg);
+    opacity: 1; }
+  .modal--form {
+    position: relative;
+    max-width: 540px;
+    width: 100%;
+    padding: 50px 40px 40px;
+    background-color: #202020;
+    border-radius: 4px;
+    opacity: 0;
+    transform: perspective(600px) translate(0, -100%) rotatex(45deg);
+    transition: all 0.5s ease 0s; }
+  .modal--btn {
+    text-align: left;
+    margin-bottom: 50px; }
+  .modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    text-align: right;
+    transition: transform 0.2s linear; }
+    .modal__close:hover {
+      transform: rotate(90deg); }
+  .modal__inner {
+    display: flex;
+    justify-content: center; }
+  .modal__item {
+    margin-right: 20px; }
+  .modal__link {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.2s linear; }
+    .modal__link::hover {
+      text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
