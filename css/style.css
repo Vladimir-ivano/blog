@@ -110,9 +110,12 @@ body {
     display: flex;
     margin-right: 15px; }
   .siedbar__icon {
-    display: inline-block;
     height: 25px;
     width: 25px; }
+    .siedbar__icon--modal {
+      height: 39px;
+      width: 39px;
+      border-radius: 50%; }
   .siedbar__text {
     padding: 0 15px;
     margin-bottom: 50px; }
@@ -722,7 +725,8 @@ body {
   z-index: 5;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.5s ease 0s; }
+  transition: all 0.5s ease 0s;
+  padding: 10px; }
   .modal:target {
     opacity: 1;
     visibility: visible; }
@@ -731,7 +735,7 @@ body {
     opacity: 1; }
   .modal--form {
     position: relative;
-    max-width: 540px;
+    max-width: 500px;
     width: 100%;
     padding: 50px 40px 40px;
     background-color: #202020;

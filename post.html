@@ -13,6 +13,24 @@
 
   <svg display="none">
 
+    <symbol id="copy" viewBox="0 0 512 512">
+      <path style="fill:#FA6E51;" d="M0,256.006C0,397.402,114.606,512.004,255.996,512C397.394,512.004,512,397.402,512,256.006
+	C512.009,114.61,397.394,0,255.996,0C114.606,0,0,114.614,0,256.006z" />
+      <path style="fill:#E8573F;" d="M511.393,272.788l-119.43-119.43h-0.001l-61.725-61.725c-0.634-0.636-1.394-1.142-2.235-1.494
+	c-0.837-0.35-1.743-0.539-2.669-0.539h-124.8c-3.828,0-6.933,3.105-6.933,6.933V131.2h-76.267c-3.828,0-6.933,3.104-6.933,6.933
+	v277.333c0,2.347,1.243,4.32,3.027,5.574c0.463,0.658,82.754,82.949,83.412,83.412c0.217,0.309,0.526,0.521,0.783,0.783
+	c18.758,4.377,38.282,6.765,58.373,6.764C391.75,512.004,502.742,406.351,511.393,272.788z" />
+      <path style="fill:#F4F6F9;" d="M401.061,163.197c-0.352-0.842-0.859-1.6-1.494-2.235l-69.329-69.329
+	c-0.635-0.635-1.393-1.142-2.235-1.494c-0.838-0.35-1.744-0.539-2.67-0.539h-124.8c-3.829,0-6.933,3.104-6.933,6.933V131.2h-76.267
+	c-3.829,0-6.933,3.104-6.933,6.933v277.333c0,3.829,3.104,6.933,6.933,6.933h194.133c3.829,0,6.933-3.104,6.933-6.933V380.8h76.267
+	c3.829,0,6.933-3.104,6.933-6.933v-208C401.6,164.941,401.411,164.035,401.061,163.197z M332.267,113.27l45.663,45.663h-45.663
+	V113.27z M304.533,408.533H124.267V145.067H235.2v62.4c0,3.829,3.104,6.933,6.933,6.933h62.4V408.533z M294.73,200.533h-45.663
+	V154.87L294.73,200.533z M318.4,366.933V207.467c0-0.926-0.189-1.831-0.539-2.67c-0.352-0.842-0.859-1.6-1.494-2.235l-69.329-69.329
+	c-0.635-0.635-1.393-1.142-2.235-1.494c-0.838-0.35-1.744-0.539-2.67-0.539h-34.667v-27.733H318.4v62.4
+	c0,3.829,3.104,6.933,6.933,6.933h62.4v194.133H318.4z" />
+    </symbol>
+
+
     <symbol id="facebook" viewBox="0 0 512 512">
       <path style="fill:#1976D2;" d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h384c35.296,0,64-28.704,64-64V64
     C512,28.704,483.296,0,448,0z" />
@@ -74,49 +92,51 @@
   </svg>
 
   <aside class="siedbar">
-
-    <picture class="siedbar__picture">
-      <source srcset="./photo/saidbar.webp" type="image/webp" height>
-      <img class="siedbar__image" src="./photo/saidbar.jpg" alt="" ">
-      </picture>
-      <picture class=" siedbar__content__photo">
-      <source srcset="./photo/photo.webp" type="image/webp">
-      <img class="siedbar__content__avatar" src="./photo/photo.jpg" alt="">
-    </picture>
-    <h1 class="siedbar__content__name"> Дмитрий Валак</h1>
-    <p class="siedbar__content__proff">блог front-end разработчика </p>
-    <ul class="siedbar__inner">
-      <li class="siedbar__item">
-        <a href="https://vk.com/id88394767">
-          <svg class="siedbar__icon">
-            <use xlink:href="#facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="siedbar__item">
-        <a href="#">
-          <svg class="siedbar__icon">
-            <use xlink:href="#vk"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="siedbar__item">
-        <a href="#">
-          <img src="./photo/icon/instagram.svg" alt="" width="25px">
-
-        </a>
-      </li>
-    </ul>
-
-    <p class="siedbar__text">
-      Front-end разработчик. Практик верстки сайтов.
-
-      Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в
-      создании сайтов различной сложности.
-    </p>
     <div class="siedbar__box">
-      <a class="siedbar__btn siedbar__btn--left" href="#">Мои работы</a>
-      <button class="siedbar__btn  siedbar__btn--right">Написать мне</button>
+      <picture class="siedbar__picture">
+        <source srcset="./photo/saidbar.webp" type="image/webp" height>
+        <img class="siedbar__image" src="./photo/saidbar.jpg" alt="" ">
+          </picture>
+          <picture class=" siedbar__content__photo">
+        <source srcset="./photo/photo.webp" type="image/webp">
+        <img class="siedbar__content__avatar" src="./photo/photo.jpg" alt="">
+      </picture>
+      <h1 class="siedbar__content__name"> Дмитрий Валак</h1>
+      <p class="siedbar__content__proff">блог front-end разработчика </p>
+      <ul class="siedbar__inner">
+        <li class="siedbar__item">
+          <a href="https://vk.com/id88394767">
+            <svg class="siedbar__icon">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="siedbar__item">
+          <a href="#">
+            <svg class="siedbar__icon">
+              <use xlink:href="#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="siedbar__item">
+          <a href="#">
+            <img src="./photo/icon/instagram.svg" alt="" width="25px">
+
+          </a>
+        </li>
+      </ul>
+
+      <p class="siedbar__text">
+        Front-end разработчик. Практик верстки сайтов.
+
+        Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в
+        создании сайтов различной сложности.
+      </p>
+      <div class="siedbar__box">
+        <a class="siedbar__btn siedbar__btn--left" href="mywork.html">Мои работы</a>
+
+        <a class="siedbar__btn siedbar__btn--left" href="#modal">Написать мне</a>
+      </div>
     </div>
   </aside>
 
@@ -173,10 +193,11 @@
             <a class="post__headar__link" href="">вернуться назад </a>
           </li>
           <li class="post__headar__item">
-            <a class="post__headar__link" href="">поделиться</a>
+            <a class="post__headar__link" href="#modal__social">поделиться</a>
           </li>
           <li class="post__headar__item">
-            <a class="post__headar__link" href=""><img class="post__headar__img" src="./photo/share .svg" alt=""></a>
+            <a class="post__headar__link" href="#modal__social"><img class="post__headar__img" src="./photo/share .svg"
+                alt=""></a>
 
           </li>
         </ul>
@@ -212,13 +233,13 @@
             sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor
             lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu
             auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-            <p class="post__text post__text--tree">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
-              posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
-              lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor
-              lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu
-              auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+          <p class="post__text post__text--tree">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
+            posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
+            lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor
+            lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu
+            auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
         </article>
 
 
@@ -253,8 +274,8 @@
 
         </article>
 
-<!-- form -->
-        
+        <!-- form -->
+
 
         <article class="commets">
           <h3 class="post__related__title post__related__title--commets">Обсуждение</h3>
@@ -333,6 +354,56 @@
 
 
   </main>
+
+  <div class="modal" id="modal__social">
+
+<div class="modal--form">
+   
+
+      <a href="#" class="modal__close">
+        <img class="modal__img" src="./photo/icon/cancel.svg" alt="закрыть">
+      </a>
+
+
+      <ul class="siedbar__inner siedbar__inner--modal">
+        <li class="siedbar__item siedbar__item--modal">
+          <a href="https://vk.com/id88394767">
+            <svg class="siedbar__icon siedbar__icon--modal">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="siedbar__item siedbar__item--modal ">
+          <a href="#">
+            <svg class="siedbar__icon siedbar__icon--modal">
+              <use xlink:href="#vk"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="siedbar__item siedbar__item--modal">
+          <a href="#">
+            <svg class="siedbar__icon siedbar__icon--modal">
+              <use xlink:href="#vk"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="siedbar__item siedbar__item--modal">
+          <a href="#">
+            <svg class="siedbar__icon siedbar__icon--modal">
+              <use xlink:href="#copy"></use>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
 </body>
 
 </html>

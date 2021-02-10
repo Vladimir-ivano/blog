@@ -88,9 +88,13 @@ body
     display: flex
     margin-right: 15px
   &__icon
-    display: inline-block
+    
     height: 25px
     width: 25px
+    &--modal
+      height: 39px
+      width: 39px
+      border-radius: 50%
   &__text
     padding: 0 15px
     margin-bottom: 50px
@@ -742,6 +746,7 @@ body
   opacity: 0
   visibility: hidden
   transition: all .5s ease 0s
+  padding: 10px
   &:target
     opacity: 1
     visibility: visible
@@ -751,7 +756,7 @@ body
     
   &--form
     position: relative
-    max-width: 540px
+    max-width: 500px
     width: 100%
     padding: 50px 40px 40px
     background-color: #202020
