@@ -61,15 +61,18 @@ body {
     height: 100vh; }
 
 .main {
-  flex-basis: calc( 100% - 350px  );
+  flex-basis: calc( 100% - 300px  );
   background-color: #202020; }
 
 .siedbar {
   background-color: #202020;
-  width: 350px;
+  min-width: 300px;
   text-align: center;
   position: relative;
   box-shadow: 5px 0 15px #181818; }
+  .siedbar__box {
+    position: sticky;
+    top: 0; }
   .siedbar__picture {
     overflow: hidden;
     display: block;
