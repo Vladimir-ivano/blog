@@ -156,9 +156,9 @@ body {
   box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 5;
-  width: 100%; }
+  width: calc( 100% - 300px  ); }
   .nav__nav {
     display: flex; }
   .nav__item {
