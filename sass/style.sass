@@ -29,17 +29,24 @@ body
 
 
 .page
-  display: flex
+  
   
   &--profil
     height: 100vh
 .main
-  flex-basis: calc( 100% - 300px  )
+  osition: fixed
+  top: 0
+  left: 0
+  z-index: 4
+  padding-left: 300px
   background-color: $accent
 
 // ====== siedbar======//
 .siedbar
-  
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 4
   background-color: #202020
   width: 300px
   text-align: center
