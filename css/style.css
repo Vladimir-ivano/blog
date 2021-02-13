@@ -185,6 +185,9 @@ body {
     color: #fff;
     background: #2A5FE7;
     transition: all 0.2s linear; }
+    @media (max-width: 999px) {
+      .siedbar__btn {
+        margin-bottom: 20px; } }
     .siedbar__btn--left {
       background: #ED3024;
       margin-right: 15px; }
@@ -295,11 +298,11 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   padding-top: 40px;
   display: none;
-  margin-bottom: 60px;
   text-align: left;
   margin-left: 30px;
   margin-right: 20px; }
   .mob-nav__item {
+    padding: 2px 0;
     cursor: pointer; }
   .mob-nav__link {
     font-size: 16px;
@@ -313,12 +316,9 @@ body {
       display: block; }
   .mob-nav__subnav {
     margin-left: 10px;
-    position: absolute;
-    top: 100%;
-    left: 0;
     display: none; }
     .mob-nav__subnav__link {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 300;
       line-height: 1.6;
       color: #fff;
