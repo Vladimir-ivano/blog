@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -291,11 +292,33 @@ body {
       color: #bbb8b8; }
 
 .mob-nav {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   padding-top: 40px;
   display: none;
   margin-bottom: 60px;
   text-align: left;
-  margin-left: 30px; }
+  margin-left: 30px;
+  margin-right: 20px; }
+  .mob-nav__item {
+    cursor: pointer; }
+  .mob-nav__link {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #fff;
+    transition: 0.2s linear; }
+    .mob-nav__link::hover {
+      color: #107EFF; }
+  .mob-nav__subnav {
+    margin-left: 10px; }
+    .mob-nav__subnav__link {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: #fff;
+      transition: 0.2s linear; }
+      .mob-nav__subnav__link::hover {
+        color: #107EFF; }
   @media (max-width: 999px) {
     .mob-nav {
       display: block; } }

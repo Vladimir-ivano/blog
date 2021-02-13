@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
 $tt1:'Lato', sans-serif
 $tt2: 'Roboto', sans-serif
 
@@ -274,11 +275,33 @@ body
 
 // ====== mob-nav ======//
 .mob-nav 
+  border-top: 1px solid rgba(255,255 ,255 ,0.25 )
   padding-top: 40px
   display: none
   margin-bottom: 60px
   text-align: left
   margin-left: 30px
+  margin-right: 20px
+  &__item
+    cursor: pointer
+  &__link
+    font-size: 16px
+    font-weight: normal
+    line-height: 1.6
+    color: #fff
+    transition: .2s linear
+    &::hover
+      color: #107EFF
+  &__subnav
+    margin-left: 10px
+    &__link
+      font-size: 16px
+      font-weight: 300
+      line-height: 1.6
+      color: #fff
+      transition: .2s linear
+      &::hover
+        color: #107EFF
   @media (max-width: 999px)
     display: block
 // ====== burger======//
