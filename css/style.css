@@ -49,7 +49,7 @@ body {
   margin: 10em auto 0 auto;
   max-width: 700px;
   padding: 0 50px; }
-  @media (max-width: 706px) {
+  @media (max-width: 645px) {
     .container {
       padding: 0 20px;
       margin: 6em auto 0 auto; } }
@@ -214,7 +214,7 @@ body {
     color: rgba(255, 255, 255, 0.4);
     border-bottom: 1px solid #0D0D0D;
     background-color: #202020;
-    max-width: 212px;
+    min-width: 212px;
     display: block;
     padding: 0 1.35em;
     height: 45px;
@@ -254,6 +254,36 @@ body {
     transition: 0.2s linear; }
     .subnav__categoru:hover {
       color: #bbb8b8; }
+
+.burger {
+  background: none;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%); }
+  .burger__nav {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: opacity 0.2s linear; }
+    .burger__nav::before, .burger__nav::after {
+      position: absolute;
+      content: "";
+      display: block;
+      background-color: #fff;
+      width: 30px;
+      height: 2px;
+      left: 0;
+      top: 10px; }
+    .burger__nav::after {
+      top: -10px; }
 
 .storis {
   display: flex;

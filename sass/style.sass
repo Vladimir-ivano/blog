@@ -18,7 +18,7 @@ body
   margin: 10em auto  0 auto
   max-width: 700px
   padding: 0 50px
-  @media (max-width: 706px)
+  @media (max-width: 645px)
     padding: 0 20px
     margin: 6em auto  0 auto
   &--prof
@@ -194,7 +194,7 @@ body
     color: rgba(255,255 , 255,.4 )
     border-bottom: 1px solid $head
     background-color: #202020
-    max-width: 212px 
+    min-width: 212px 
     display: block
     padding: 0 1.35em
     height: 45px
@@ -232,6 +232,37 @@ body
     transition: 0.2s linear
     &:hover
       color: #bbb8b8
+// ====== burger======//
+.burger
+  background: none
+  width: 30px
+  height: 2px
+  position: absolute
+  top: 50%
+  left: 20px
+  transform: translateY(-50%)
+  &__nav
+    top: 50%
+    left: 20px
+    transform: translateY(-50%)
+    border-radius: 4px
+    display: block
+    width: 100%
+    height: 2px
+    background-color: #fff
+    transition: opacity .2s linear
+    &::before,&::after
+      position: absolute
+      content: ""
+      display: block
+      background-color: #fff
+      width: 30px
+      height: 2px
+      left: 0
+      top: 10px
+    &::after
+      top: -10px
+    
 // ====== storis======//
 .storis
   
