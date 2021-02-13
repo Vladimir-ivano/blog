@@ -51,8 +51,7 @@ body {
   padding: 0 50px; }
   @media (max-width: 999px) {
     .container {
-      max-width: 100%;
-      padding: 0 20px;
+      padding: 0 50px;
       margin: 6em auto 0 auto; } }
   .container--prof {
     display: flex;
@@ -86,6 +85,12 @@ body {
       transition: transform 0.3s linear; }
       .siedbar.activ {
         transform: translateX(0%); } }
+  .siedbar__box {
+    position: relative; }
+  @media (max-width: 999px) {
+    .siedbar__header {
+      display: flex;
+      margin-bottom: 20px; } }
   .siedbar__picture {
     overflow: hidden;
     display: block;
@@ -109,24 +114,39 @@ body {
     position: relative; }
     @media (max-width: 999px) {
       .siedbar__content__photo {
-        margin: -20px 20px;
+        margin: -20px 10px;
         height: 65px;
         width: 65px; } }
   .siedbar__content__avatar {
     width: auto;
     height: 100%;
     margin: 0 -50%; }
+  .siedbar__content__profil {
+    margin-top: 20px; }
+    @media (max-width: 999px) {
+      .siedbar__content__profil {
+        padding-left: 8px;
+        margin-top: 8px;
+        text-align: left; } }
   .siedbar__content__name {
-    margin-top: 20px;
     font-size: 18px;
     color: #fff; }
+    @media (max-width: 999px) {
+      .siedbar__content__name {
+        font-size: 15px; } }
   .siedbar__content__proff {
     font-size: 14px; }
+    @media (max-width: 999px) {
+      .siedbar__content__proff {
+        font-size: 12px; } }
   .siedbar__inner {
     margin-top: 20px;
     justify-content: center;
     display: flex;
     margin-bottom: 50px; }
+    @media (max-width: 999px) {
+      .siedbar__inner {
+        display: none; } }
   .siedbar__item {
     display: flex;
     margin-right: 15px; }
@@ -147,6 +167,9 @@ body {
       width: calc( 100% -20px  );
       height: 1px;
       background-color: #1c1c1c; }
+    @media (max-width: 999px) {
+      .siedbar__text {
+        display: none; } }
   .siedbar__btn {
     border-radius: 40px;
     padding: 1.1em 1.9em;
@@ -159,7 +182,7 @@ body {
     font-family: inherit;
     font-weight: 500;
     color: #fff;
-    background: #cccc;
+    background: #2A5FE7;
     transition: all 0.2s linear; }
     .siedbar__btn--left {
       background: #ED3024;
@@ -266,6 +289,16 @@ body {
     transition: 0.2s linear; }
     .subnav__categoru:hover {
       color: #bbb8b8; }
+
+.mob-nav {
+  padding-top: 40px;
+  display: none;
+  margin-bottom: 60px;
+  text-align: left;
+  margin-left: 30px; }
+  @media (max-width: 999px) {
+    .mob-nav {
+      display: block; } }
 
 .burger {
   display: none;
