@@ -49,8 +49,9 @@ body {
   margin: 10em auto 0 auto;
   max-width: 700px;
   padding: 0 50px; }
-  @media (max-width: 645px) {
+  @media (max-width: 999px) {
     .container {
+      max-width: 100%;
       padding: 0 20px;
       margin: 6em auto 0 auto; } }
   .container--prof {
@@ -81,11 +82,17 @@ body {
   box-shadow: 5px 0 15px #181818; }
   @media (max-width: 999px) {
     .siedbar {
-      display: none; } }
+      transform: translateX(-100%);
+      transition: transform 0.3s linear; }
+      .siedbar.activ {
+        transform: translateX(0%); } }
   .siedbar__picture {
     overflow: hidden;
     display: block;
     height: 200px; }
+    @media (max-width: 999px) {
+      .siedbar__picture {
+        height: 160px; } }
   .siedbar__image {
     display: block;
     height: auto;
@@ -100,6 +107,11 @@ body {
     border: 2px solid #ffffff;
     box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
     position: relative; }
+    @media (max-width: 999px) {
+      .siedbar__content__photo {
+        margin: -20px 20px;
+        height: 65px;
+        width: 65px; } }
   .siedbar__content__avatar {
     width: auto;
     height: 100%;
@@ -256,9 +268,11 @@ body {
       color: #bbb8b8; }
 
 .burger {
+  display: none;
   background: none;
-  width: 30px;
-  height: 2px;
+  width: 40px;
+  padding: 5px;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 20px;
@@ -284,6 +298,9 @@ body {
       top: 10px; }
     .burger__nav::after {
       top: -10px; }
+  @media (max-width: 999px) {
+    .burger {
+      display: block; } }
 
 .storis {
   display: flex;

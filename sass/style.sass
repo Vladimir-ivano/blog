@@ -18,7 +18,8 @@ body
   margin: 10em auto  0 auto
   max-width: 700px
   padding: 0 50px
-  @media (max-width: 645px)
+  @media (max-width: 999px)
+    max-width: 100%
     padding: 0 20px
     margin: 6em auto  0 auto
   &--prof
@@ -53,12 +54,17 @@ body
   text-align: center
   box-shadow: 5px 0 15px #181818
   @media (max-width: 999px)
-    display: none
+    transform: translateX(-100%)
+    transition: transform .3s linear
+    &.activ
+      transform: translateX(0%)
   &__picture
     
     overflow: hidden
     display: block
     height: 200px
+    @media (max-width: 999px)
+      height: 160px
   &__image
     display: block
     height: auto
@@ -74,11 +80,18 @@ body
       border: 2px solid #ffffff
       box-shadow: 0 7px 20px rgba(0,0 , 0,.25 )
       position: relative
+      @media (max-width: 999px)
+        margin: -20px 20px
+        height: 65px
+        width: 65px
+
+        
     &__avatar
       width: auto
       height: 100%
       margin: 0 -50%
-      
+      @media (max-width: 999px)
+        
     &__name
       margin-top: 20px
       font-size: 18px
@@ -234,9 +247,11 @@ body
       color: #bbb8b8
 // ====== burger======//
 .burger
+  display: none
   background: none
-  width: 30px
-  height: 2px
+  width: 40px
+  padding: 5px
+  height: 100%
   position: absolute
   top: 50%
   left: 20px
@@ -263,8 +278,9 @@ body
       top: 10px
     &::after
       top: -10px
-    
-    
+    &.activ
+  @media (max-width: 999px)
+    display: block
 // ====== storis======//
 .storis
   
