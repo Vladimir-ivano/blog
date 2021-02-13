@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>post</title>
+  <title>Blog</title>
 </head>
 
-<body class="page">
-
+<body class="page ">
 
   <svg display="none">
+
 
     <symbol id="copy" viewBox="0 0 512 512">
       <path style="fill:#FA6E51;" d="M0,256.006C0,397.402,114.606,512.004,255.996,512C397.394,512.004,512,397.402,512,256.006
@@ -89,16 +89,21 @@
 
 
 
+
+
+
   </svg>
+
+  
 
   <aside class="siedbar">
     <div class="siedbar__box">
       <picture class="siedbar__picture">
-        <source srcset="" type="image/webp" height>
-        <img class="siedbar__image" src="./photo/saidbar.jpg" alt="" >
-          </picture>
-          <picture class=" siedbar__content__photo">
-        <source srcset="" type="image/webp">
+        <source srcset="./photo/saidbar.webp" type="image/webp" height>
+        <img class="siedbar__image" src="./photo/web/saidbar.jpg" alt="" ">
+      </picture>
+      <picture class=" siedbar__content__photo">
+        <source srcset="./photo/web/photo.webp" type="image/webp">
         <img class="siedbar__content__avatar" src="./photo/photo.jpg" alt="">
       </picture>
       <h1 class="siedbar__content__name"> Дмитрий Валак</h1>
@@ -145,49 +150,51 @@
 
     <!-- nav -->
 
-
     <nav class="nav">
-      <ul class="nav__nav">
-        <li class="nav__item">
-          <a class="nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav__link--list active" href="">Cтатьи</a>
-          <ul class="subnav">
-            <li class="subnav__item">
-              <a class="subnav__categoru" href="">Создание
-                сайтов </a>
-            </li>
-            <li class="subnav__item">
-              <a class="subnav__categoru" href="">Интернет - магазин </a>
-            </li>
-            <li class="subnav__item">
-              <a class="subnav__categoru" href="#">Продвижение видео</a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="nav__item">
-          <a class="nav__link" href="">Обо мне</a>
-        </li>
-
-        <li class="nav__item nav__item--offset">
-          <a class="nav__link nav__link--offset" href="">Реклама</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="profil.html">Профиль</a>
-        </li>
-        <input class="nav__search" type="text" placeholder="Поиск по блоку">
-      </ul>
+      <div class="nav__box">
+        <ul class="nav__nav">
+          <li class="nav__item">
+            <a class="nav__link active" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--list " href="">Cтатьи</a>
+            <ul class="subnav">
+              <li class="subnav__item">
+                <a class="subnav__categoru" href="post.html">Создание
+                  сайтов </a>
+              </li>
+              <li class="subnav__item">
+                <a class="subnav__categoru" href="post.html">Интернет - магазин </a>
+              </li>
+              <li class="subnav__item">
+                <a class="subnav__categoru" href="post.html">Продвижение видео</a>
+              </li>
+            </ul>
+          </li>
+  
+          <li class="nav__item">
+            <a class="nav__link" href="">Обо мне</a>
+          </li>
+  
+          <li class="nav__item nav__item--offset">
+            <a class="nav__link nav__link--offset" href="">Реклама</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="profil.html">Профиль</a>
+          </li>
+          <input class="nav__search" type="text" placeholder="Поиск по блоку">
+        </ul>
+      </div>
     </nav>
-
-
+    
+  
     <!-- container-->
 
     <div class="container">
-      <!-- post -->
 
-      <div class="post post__post">
+       <!-- post -->
+
+       <div class="post post__post">
         <ul class="post__headar post__headar--post">
           <li class="post__headar__item">
             <a class="post__headar__link" href="">вернуться назад </a>
@@ -349,58 +356,54 @@
 
       </div><!-- /post post__post-->
 
-    </div> <!-- /container-->
-
-
-
+    </div>
   </main>
+  <!-- modal -->
 
-  <div class="modal" id="modal__social">
+  <div class="modal" id="modal">
 
-    <div class="modal--form">
 
+    <form class="modal--form" action="/" method="POST">
 
       <a href="#" class="modal__close">
         <img class="modal__img" src="./photo/icon/cancel.svg" alt="закрыть">
       </a>
 
 
-      <ul class="siedbar__inner siedbar__inner--modal">
-        <li class="siedbar__item siedbar__item--modal">
-          <a href="https://vk.com/id88394767">
-            <svg class="siedbar__icon siedbar__icon--modal">
-              <use xlink:href="#facebook"></use>
-            </svg>
-          </a>
-        </li>
 
-        <li class="siedbar__item siedbar__item--modal ">
-          <a href="#">
-            <svg class="siedbar__icon siedbar__icon--modal">
-              <use xlink:href="#vk"></use>
-            </svg>
-          </a>
-        </li>
+      <div class="profil__form">
+        <div class="profil__grup">
+          <input class="profil__form__input" type="name" placeholder="Ваше имя" value="Владимир">
+          <span class="profil__line"></span>
+        </div>
 
-        <li class="siedbar__item siedbar__item--modal">
-          <a href="#">
-            <svg class="siedbar__icon siedbar__icon--modal">
-              <use xlink:href="#vk"></use>
-            </svg>
-          </a>
-        </li>
+        <div class="profil__grup">
+          <input class="profil__form__input" type="Email" placeholder="Ваш Email">
+          <span class="profil__line"></span>
+        </div>
+        <textarea class="commets__text" placeholder="Текст сообщения"></textarea>
 
-        <li class="siedbar__item siedbar__item--modal">
-          <a href="#">
-            <svg class="siedbar__icon siedbar__icon--modal">
-              <use xlink:href="#copy"></use>
-            </svg>
-          </a>
-        </li>
+      </div>
 
+
+      <div class="profil__grup modal--btn">
+        <button class="siedbar__btn commets--btn work--btn " type="submit">Отправить</button>
+      </div>
+
+
+      <ul class="modal__inner">
+
+        <li class="modal__item">
+          <span class="modal__li">e-mail:</span>
+          <a class="modal__link" href="email:info@mywebsite.ru "> info@mywebsite.ru</a>
+        </li>
+        <li class="modal__item">
+          <span class="modal__li">тел:</span>
+          <a class="modal__link" href="tel:+94323285622"> +943-232-856-22</a>
+        </li>
       </ul>
 
-    </div>
+    </form>
 
   </div>
 
