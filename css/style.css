@@ -309,8 +309,14 @@ body {
     transition: 0.2s linear; }
     .mob-nav__link::hover {
       color: #107EFF; }
+    .mob-nav__link > .subnav {
+      display: block; }
   .mob-nav__subnav {
-    margin-left: 10px; }
+    margin-left: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; }
     .mob-nav__subnav__link {
       font-size: 16px;
       font-weight: 300;
