@@ -67,7 +67,7 @@ body {
   background-color: #202020; }
   @media (max-width: 700px) {
     .main {
-      margin: 0 auto; } }
+      padding-left: 0; } }
 
 .siedbar {
   height: 100%;
@@ -172,7 +172,7 @@ body {
   width: calc( 100% - 300px  ); }
   @media (max-width: 700px) {
     .nav {
-      width: calc( 100% - 320px  ); } }
+      width: 100%; } }
   .nav__nav {
     display: flex; }
   .nav__item {
