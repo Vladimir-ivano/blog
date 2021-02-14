@@ -20,7 +20,7 @@ body
   max-width: 700px
   padding: 0 50px
   @media (max-width: 999px)
-    
+    max-width: 100%
     padding: 0 50px
     margin: 6em auto  0 auto
   @media (max-width: 500px)
@@ -217,7 +217,8 @@ body
     font-size: 14px
     line-height: 1.1
     padding: 1em 1em
-    
+    @media (max-width: 999px)
+      font-size: 13px
     &--list
       padding-right: 2.5em
       position: relative
