@@ -24,7 +24,7 @@ body
     padding: 0 50px
     margin: 6em auto  0 auto
   @media (max-width: 500px)
-    padding: 0 30px
+    padding: 0 25px
   &--prof
     display: flex
     height: 80vh
@@ -712,8 +712,10 @@ body
       
 // ======commets======//
 .commets
-  margin-top: 10px
-  margin-bottom: 40px
+  margin: 10px 0 40px 0
+  
+  @media (max-width: 500px)
+    margin: 10px 0 20px 0
   &__form
   &__text
     width: 100%
@@ -738,9 +740,14 @@ body
     // ======commet======//
 .commet
   margin-bottom: 30px
+  @media (max-width: 500px)
+    margin-bottom: 15px
   &--two
     padding-left: 30px
     margin-bottom: 40px
+    @media (max-width: 500px)
+      padding-left: 15px
+      margin-bottom: 20px
   &__inner
     align-items: center
     display: flex
@@ -784,23 +791,32 @@ body
   box-shadow: 0 5px 22px rgba(0,0 , 0,.25 )
   &:last-child
     margin-bottom: 60px
+  @media (max-width: 700px)
+    flex-wrap: wrap
   
   &__pucture
     width: auto
     min-height: 510px
+    @media (max-width: 700px)
+      
   &__image
   
     height: 100%
     display: block
     width: 310px
     object-fit: cover
-    
+    @media (max-width: 700px)
+      width: 100%
+
   &__content
     display: flex
     flex-direction: column
     height: auto
     padding: 25px 25px 
     width: calc( 100% - 310px  )
+    @media (max-width: 700px)
+      width: 100%
+      padding: 15px 15px 
   &__title
     font-size: 24px
     line-height: 1.1
@@ -837,11 +853,16 @@ body
 .profil
   display: flex
   flex-wrap: wrap
+  @media (max-width: 700px)
+    flex-wrap: nowrap
+    flex-direction: column
   &__inner
     display: flex
     justify-content: center
+  &--btn
+    @media (max-width: 700px)
+      width: 110px
     
-    margin: 30px auto 0
   &__item
     &:first-child
       margin-right: 20px
@@ -856,6 +877,8 @@ body
     &__btn
       display: flex
       justify-content: center
+      @media (max-width: 700px)
+        width: 110px
   &__line
     position: absolute
     width: 0
@@ -868,6 +891,8 @@ body
     
   &__form
     flex-basis: 340px
+    @media (max-width: 700px)
+      flex-basis: 340px
     &--modal
       flex-basis: 340px
     &--form
@@ -892,6 +917,8 @@ body
         width: 100%
   &__avatar
     margin-left: 110px
+    @media (max-width: 700px)
+      margin-left: 0
   &__picture
     height: 100%
     width: auto
@@ -906,6 +933,7 @@ body
     cursor: pointer
     color: #107EFF
     transition: 0.2s linear
+    
     &:hover
       text-decoration: none
   &__input
