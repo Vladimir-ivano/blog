@@ -488,7 +488,7 @@ body
 
 // ====== post post--two======//
 .post
-  &--two
+  &__two
    
   &__picture
     display: block
@@ -497,6 +497,8 @@ body
     overflow: hidden
     &--video
       margin: 0 0 25px
+      @media( max-width:770px )
+        margin: -25px -25px 25px
   &__image
     width: 100%
     height: 245px
@@ -513,19 +515,18 @@ body
   &__inner
     display: flex
     justify-content: space-between
-  &__btn
-    font-size: 14px
-    line-height: 1.1
-    color: #107EFF
-    cursor: pointer
-    transition: all 0.2s linear
-    &:hover
-      color: #0372f1
+  
   &__footer
     display: flex
+    @media( max-width:770px )
+      flex-wrap: wrap
   &__item
     margin-right: 20px
     position: relative
+    @media( max-width:770px )
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0px
     &:last-child
       margin-right: 0px
     &--time::after
@@ -536,38 +537,57 @@ body
       border-radius: 50%
       background-color: #C4C4C4
       margin-left: 15px
+  &__btn
+    font-size: 14px
+    line-height: 1.1
+    color: #107EFF
+    cursor: pointer
+    transition: all 0.2s linear
+    &:hover
+      color: #0372f1
   &__link
     font-size: 14px
     color: $blgcol
     transition: all 0.2s linear
     &:hover
       color: #c5bfbf
+    &--btn
+      font-size: 14px
+      line-height: 1.1
+      color: #107EFF
+      cursor: pointer
+      transition: all 0.2s linear
+      &:hover
+        color: #0372f1
 // ====== embat======//
-.embat
+.embed
   position: relative
   overflow: hidden
   &::before
     content: ""
     display: block
-    padding-top: 52.25%
+    padding-top: 56.25%
   iframe,video
-    overflow: hidden
     width: 100%
     height: 100%
     position: absolute
     top: 0
     left: 0
     z-index: 1
-
+// ====== post post--tree======//
+.post
+  &__three
+    
 // ====== post post--four======//
 .post
   
 // ======pagination======//
 .pagination
-  margin-top: 60px
+  margin: 50px  0
   display: flex
   justify-content: center
-  margin-bottom: 60px
+  @media( max-width:770px )
+    margin: 30px  0
   &__inner
     margin-right: 5px
     transition: all 0.2s linear
@@ -605,6 +625,8 @@ body
       line-height: 1.6
       color: $blgcol
       margin-right: 10px
+      &--none
+        display: none
   &__title--post
     margin-bottom: 10px
   &__item--time
@@ -616,6 +638,8 @@ body
     margin-top: 0px
   &__picture--post
     padding: 25px 25px 0
+    @media (max-width: 680px)
+      height: 145px
   &__content--post 
     margin-bottom: 30px
     &::after
@@ -651,10 +675,14 @@ body
   &__post
     display: flex
     justify-content: space-between
+    @media( max-width:770px )
+      flex-wrap: wrap
   &__item
     overflow: hidden
     flex-basis: 50%
     margin-bottom: 20px
+    @media( max-width:700px )
+      flex-basis: 100%
   &__link
     display: block
     -o-text-overflow: ellipsis
