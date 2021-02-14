@@ -179,7 +179,6 @@ body {
     padding: 1.1em 1.9em;
     text-decoration: none;
     border: none;
-    vertical-align: center;
     display: inline-block;
     font-size: 12px;
     line-height: 1.1;
@@ -188,9 +187,6 @@ body {
     color: #fff;
     background: #2A5FE7;
     transition: all 0.2s linear; }
-    @media (max-width: 999px) {
-      .siedbar__btn {
-        margin-bottom: 20px; } }
     .siedbar__btn--left {
       background: #ED3024;
       margin-right: 15px; }
@@ -798,6 +794,9 @@ body {
   .work__pucture {
     width: auto;
     min-height: 510px; }
+    @media (max-width: 700px) {
+      .work__pucture {
+        min-height: 210px; } }
   .work__image {
     height: 100%;
     display: block;
@@ -848,6 +847,9 @@ body {
   .work__btn {
     margin-top: auto;
     text-align: right; }
+    @media (max-width: 700px) {
+      .work__btn {
+        margin-bottom: 0; } }
 
 .profil {
   display: flex;
@@ -891,6 +893,9 @@ body {
     flex-basis: 340px; }
     @media (max-width: 700px) {
       .profil__form {
+        width: 340px; } }
+    @media (max-width: 700px) {
+      .profil__form {
         flex-basis: 340px; } }
     .profil__form--modal {
       flex-basis: 340px; }
@@ -918,7 +923,8 @@ body {
     margin-left: 110px; }
     @media (max-width: 700px) {
       .profil__avatar {
-        margin-left: 0; } }
+        margin-left: 0;
+        margin-top: -125px; } }
   .profil__picture {
     height: 100%;
     width: auto; }

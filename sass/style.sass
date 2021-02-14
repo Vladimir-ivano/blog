@@ -160,7 +160,6 @@ body
     padding: 1.1em 1.9em
     text-decoration: none
     border: none
-    vertical-align: center
     display: inline-block
     font-size: 12px
     line-height: 1.1
@@ -169,8 +168,7 @@ body
     color: #fff
     background: #2A5FE7
     transition: all 0.2s linear
-    @media (max-width: 999px)
-      margin-bottom: 20px
+    
     &--left
       background: $butcol2
       margin-right: 15px
@@ -798,7 +796,7 @@ body
     width: auto
     min-height: 510px
     @media (max-width: 700px)
-      
+      min-height: 210px
   &__image
   
     height: 100%
@@ -849,6 +847,8 @@ body
   &__btn
     margin-top: auto
     text-align: right
+    @media (max-width: 700px)
+      margin-bottom: 0
 // ======profil======//
 .profil
   display: flex
@@ -892,6 +892,8 @@ body
   &__form
     flex-basis: 340px
     @media (max-width: 700px)
+      width: 340px
+    @media (max-width: 700px)
       flex-basis: 340px
     &--modal
       flex-basis: 340px
@@ -919,6 +921,7 @@ body
     margin-left: 110px
     @media (max-width: 700px)
       margin-left: 0
+      margin-top: -125px
   &__picture
     height: 100%
     width: auto
