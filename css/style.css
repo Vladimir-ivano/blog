@@ -508,7 +508,7 @@ body {
       width: calc( 100% + 30px  ); } }
   .post__picture--video {
     margin: 0 0 25px; }
-@media( max-width:770px ) {
+@media( max-width:700px ) {
   .post__picture--video {
     margin: -15px -15px 10px; } }
 .post__image {
@@ -574,6 +574,7 @@ body {
       color: #0372f1; }
 
 .embed {
+  width: 100%;
   position: relative;
   overflow: hidden; }
   .embed::before {
