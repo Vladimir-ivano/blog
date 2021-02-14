@@ -54,6 +54,9 @@ body {
     .container {
       padding: 0 50px;
       margin: 6em auto 0 auto; } }
+  @media (max-width: 500px) {
+    .container {
+      padding: 0 30px; } }
   .container--prof {
     display: flex;
     height: 80vh;
@@ -482,12 +485,18 @@ body {
   border-radius: 4px;
   box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
   padding: 25px 25px; }
+  @media (max-width: 700px) {
+    .post {
+      padding: 15px 15px; } }
   .post::last-child {
     margin-bottom: 0px; }
   .post__text {
+    margin: 20px 0;
     font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 20px; }
+    line-height: 1.6; }
+    @media (max-width: 700px) {
+      .post__text {
+        margin: 0 0 10px 0; } }
   .post__footer {
     font-size: 12px;
     color: #828282; }
@@ -497,18 +506,22 @@ body {
   margin: -25px -25px 25px;
   width: calc( 100% + 50px  );
   overflow: hidden; }
+  @media (max-width: 700px) {
+    .post__picture {
+      margin: -15px -15px 10px;
+      width: calc( 100% + 30px  ); } }
   .post__picture--video {
     margin: 0 0 25px; }
 @media( max-width:770px ) {
   .post__picture--video {
-    margin: -25px -25px 25px; } }
+    margin: -15px -15px 10px; } }
 .post__image {
   width: 100%;
   height: 245px;
   object-fit: cover;
   border-radius: 4px; }
 .post__content {
-  margin-top: 20px; }
+  margin-top: 10px; }
   .post__content--saerch {
     margin-top: 0px; }
 .post__title {
@@ -627,15 +640,17 @@ body {
   .post__item--time {
     font-size: 14px;
     margin-bottom: 20px; }
-  .post__text {
-    margin-top: 20px; }
+    @media (max-width: 500px) {
+      .post__item--time {
+        margin-bottom: 5px; } }
   .post__text--tree {
     margin-top: 0px; }
   .post__picture--post {
     padding: 25px 25px 0; }
     @media (max-width: 680px) {
       .post__picture--post {
-        height: 145px; } }
+        height: 145px;
+        padding: 15px 15px 0; } }
   .post__content--post {
     margin-bottom: 30px; }
     .post__content--post::after {
@@ -645,6 +660,9 @@ body {
       width: calc( 100% -25px  );
       height: 1px;
       background-color: #1c1c1c; }
+      @media (max-width: 680px) {
+        .post__content--post::after {
+          margin: 10px 0; } }
 
 .post__related::after {
   margin: 25px 0;
@@ -653,6 +671,9 @@ body {
   width: calc( 100% -25px  );
   height: 1px;
   background-color: #1c1c1c; }
+  @media (max-width: 680px) {
+    .post__related::after {
+      margin: 10px 0; } }
 .post__related__title {
   font-size: 16px;
   color: #fff;
