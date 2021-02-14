@@ -314,9 +314,9 @@ body {
     line-height: 1.6;
     color: #fff;
     transition: 0.2s linear; }
-    .mob-nav__link::hover {
+    .mob-nav__link:hover {
       color: #107EFF; }
-      .mob-nav__link::hover > .mob-nav__subnav {
+      .mob-nav__link:hover > .mob-nav__subnav {
         display: block; }
   .mob-nav__subnav {
     margin-left: 10px;
@@ -327,7 +327,7 @@ body {
       line-height: 1.6;
       color: #fff;
       transition: 0.2s linear; }
-      .mob-nav__subnav__link::hover {
+      .mob-nav__subnav__link:hover {
         color: #107EFF; }
   @media (max-width: 999px) {
     .mob-nav {
