@@ -316,8 +316,8 @@ body {
     transition: 0.2s linear; }
     .mob-nav__link::hover {
       color: #107EFF; }
-    .mob-nav__link > .mob-nav__ subnav {
-      display: block; }
+      .mob-nav__link::hover > .mob-nav__subnav {
+        display: block; }
   .mob-nav__subnav {
     margin-left: 10px;
     display: none; }
