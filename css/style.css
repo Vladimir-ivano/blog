@@ -520,6 +520,9 @@ body {
   height: 245px;
   object-fit: cover;
   border-radius: 4px; }
+@media( max-width:700px ) {
+  .post__image {
+    height: 185px; } }
 .post__content {
   margin-top: 10px; }
   .post__content--saerch {
