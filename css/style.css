@@ -573,8 +573,10 @@ body {
     .post__link--btn:hover {
       color: #0372f1; }
 
+.embet {
+  overflow: hidden; }
+
 .embed {
-  width: 100%;
   position: relative;
   overflow: hidden; }
   .embed::before {
