@@ -855,16 +855,9 @@ body {
 .profil {
   display: flex;
   flex-wrap: wrap; }
-  @media (max-width: 700px) {
-    .profil {
-      flex-wrap: nowrap;
-      flex-direction: column; } }
   .profil__inner {
     display: flex;
     justify-content: center; }
-  @media (max-width: 700px) {
-    .profil--btn {
-      width: 110px; } }
   .profil__item:first-child {
     margin-right: 20px; }
   .profil__link {
@@ -878,9 +871,6 @@ body {
     .profil__grup__btn {
       display: flex;
       justify-content: center; }
-      @media (max-width: 700px) {
-        .profil__grup__btn {
-          width: 110px; } }
   .profil__line {
     position: absolute;
     width: 0;
@@ -892,12 +882,6 @@ body {
     transition: width 0.2s linear; }
   .profil__form {
     flex-basis: 340px; }
-    @media (max-width: 700px) {
-      .profil__form {
-        width: 340px; } }
-    @media (max-width: 700px) {
-      .profil__form {
-        flex-basis: 340px; } }
     .profil__form--modal {
       flex-basis: 340px; }
     .profil__form--form {
@@ -924,8 +908,9 @@ body {
     margin-left: 110px; }
     @media (max-width: 700px) {
       .profil__avatar {
+        margin-bottom: 20px;
         margin-left: 0;
-        margin-top: -125px; } }
+        margin-right: 500px; } }
   .profil__picture {
     height: 100%;
     width: auto; }
